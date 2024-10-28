@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+:root {
+    --verde: #009334;
+    --verde-escuro: #2f9364;
+    --amarelo: #fff500;
+    --cinza: #868585;
+}
+
+/* Navbar */
+.background-verde {
+    background: var(--verde);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.logo a {
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.ul {
+    margin-right: 15px;
+    display: flex;
+}
+
+.ul li {
+    margin: 0 15px;
+}
+
+.ul li a {
+    color: white;
+    font-weight: 500;
+}
+
+/* Main */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 30px;
+    max-width: 1200px;
+}
+
+.main-text {
+    width: 50%;
+    text-indent: 50px;
+}
+
+.main-text h1 {
+    font-size: 3rem;
+    color: var(--verde);
+}
+
+.main-text p {
+    color: var(--cinza);
+    line-height: 1.6;
+}
+
+.main-img img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+.btn-gradiente {
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(90deg, #ffa500, #ff4500);
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/* Seção Explicativa */
+.explicacao {
+    padding: 50px 0;
+    color: white;
+}
+
+.explicacao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    margin-left: 90px;
+}
+.explicacao p {
+    margin-left: 30px;
+    margin-right: 20px;
+    text-indent: 50px;
+}
+.explicacao h3 {
+    margin-left: 30px;
+}
+
+.explicacao img {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--verde-escuro);
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 960px) {
+    main {
+        flex-direction: column;
+    }
+
+    .main-text,
+    .main-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-text h1 {
+        font-size: 2.5rem;
+    }
+}
+/* Estilo do Container de Vídeo Responsivo */
+.video-container {
+    margin: 30px auto;
+    padding: 0 15px;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000; /* Cor de fundo enquanto o vídeo não carrega */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}

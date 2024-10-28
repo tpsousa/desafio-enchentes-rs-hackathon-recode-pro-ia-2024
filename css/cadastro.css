@@ -1,0 +1,107 @@
+/* estilizacao da pagina de cadastro de necessidade */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  background-image: url('../img/doacao.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Fundo mais suave */
+  
+}
+#profisional{
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  background-image: url('../img/voluntario.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+#familia {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  background-image: url('../img/familia.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #2c5f2d; /* Tom de verde escuro para o título */
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #4b8e4b; /* Tom de verde para os rótulos */
+}
+
+input[type="text"],
+textarea,
+input[type="file"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #a8d5ba; /* Verde claro para a borda */
+}
+
+button {
+  background-color: #4CAF50; /* Verde padrão para o botão */
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #388E3C; /* Verde mais escuro para hover */
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .form-container {
+      padding: 15px;
+  }
+}

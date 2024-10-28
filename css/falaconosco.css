@@ -1,0 +1,110 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Container Principal */
+  .contact-container {
+    max-width: 900px;
+    margin-top: 10px; /* Reduzido para centralização */
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.2);
+    color: #2e7d32;
+  }
+  
+  .contact-container h2 {
+    font-size: 2.2rem;
+    color: #1b5e20;
+    margin-bottom: 10px;
+  }
+  
+  .contact-container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Link para Voltar à Home */
+  .back-home {
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #1b5e20;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .back-home:hover {
+    color: #66bb6a;
+    text-decoration: underline;
+  }
+  
+  /* Estilo das Cartões de Contato */
+  .contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .contact-card {
+    background-color: #a5d6a7;
+    border-radius: 8px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+  }
+  
+  .contact-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card h3 {
+    font-size: 1.3rem;
+    color: #2e7d32;
+    margin-top: 5px;
+  }
+  
+  .contact-detail {
+    font-weight: bold;
+    color: #1b5e20;
+    margin-top: 10px;
+  }
+  
+  /* Links das Redes Sociais */
+  .contact-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1b5e20;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #66bb6a;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+  .contact-link:hover {
+    background-color: #43a047;
+    color: #ffffff;
+  }
+  

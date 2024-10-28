@@ -1,0 +1,94 @@
+/* Estilização moderna para o formulário de cadastro de profissional solidário */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Certifique-se de usar a altura total da tela */
+    margin: 0;
+    background-color: #e8f5e9;
+  }
+#fale{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-image: url('../img/voluntario.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .form-container {
+    background-color: #ffffff;
+    padding: 20px; /* Reduzido para simplificar */
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 6px 12px rgba(0, 128, 0, 0.2);
+    border-left: 5px solid #4CAF50;
+  }
+  
+  h2 {
+    color: #2e7d32;
+    font-weight: bold;
+    text-align: center; /* Mantém o título centralizado */
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px; /* Margem uniforme */
+    font-weight: bold;
+    color: #388e3c;
+  }
+  
+  input[type="text"],
+  textarea,
+  input[type="file"],
+  select,
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px; /* Margem uniforme */
+    border-radius: 5px;
+    border: 1px solid #81c784;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Ajustado para melhor visualização */
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #388e3c;
+  }
+  
+  .mensagem-sucesso {
+    display: none;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 15px; /* Reduzido para telas menores */
+    }
+  }
+  

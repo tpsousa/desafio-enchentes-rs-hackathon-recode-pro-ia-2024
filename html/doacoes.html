@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doações</title>
+  <link rel="stylesheet" href="../css/cadastro.css">
+  <script src="../js/main.js"></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Doações</h2>
+    <form id="cadastroForm">
+      <label for="name">Nome Completo:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="contat">CPF:</label>
+      <input type="text" id="contact" name="contact" placeholder=" 012.345.678-90" required>
+
+      <label for="contact">Digite seu CEP:</label>
+      <input type="text" id="contact" name="contact"placeholder=" 00000 - 000" required>
+
+      <label for="contact">Contato (telefone ou email):</label>
+      <input type="text" id="contact" name="contact" required>
+
+       <label for="necessidades">Descreva a sua doação, e se pode levar aos abrigos.
+         <br> Lembrando que, temos pontos de coleta em todo o estado do Rio Grande do Sul, além das agências dos correios em todo o território nacional.
+         <br>Doações mais urgentes são: água e itens de higiene pessoal.
+
+       </label>
+      <textarea id="necessidades" name="necessidades" rows="4" placeholder="Descreva suas Doacões" required></textarea>
+
+      <button type="submit">Enviar Doação</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
